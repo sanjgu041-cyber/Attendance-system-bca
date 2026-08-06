@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Basaveshwara Degree College</h1>
+        <h2>Attendance Management System</h2>
+    </div>
+
+    <div class="dashboard">
+
+        <div class="card">
+            <h3>Total Students</h3>
+            <h2 id="totalStudents">0</h2>
+        </div>
+
+        <div class="card">
+            <h3>Present</h3>
+            <h2 id="presentCount">0</h2>
+        </div>
+
+        <div class="card">
+            <h3>Late</h3>
+            <h2 id="lateCount">0</h2>
+        </div>
+
+        <div class="card">
+            <h3>Absent</h3>
+            <h2 id="absentCount">0</h2>
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <h2>Student Attendance Entry</h2>
+
+        <label>Student Name</label><br>
+        <input type="text" id="name" placeholder="Enter Student Name"><br><br>
+
+        <label>Roll Number</label><br>
+        <input type="text" id="roll" placeholder="Enter Roll Number"><br><br>
+
+        <label>Course</label><br>
+        <select id="course">
+            <option>BCA</option>
+            <option>BCom</option>
+            <option>BBA</option>
+            <option>MBA</option>
+        </select><br><br>
+
+        <label>Status</label><br>
+        <select id="status">
+            <option>Present</option>
+            <option>Late</option>
+            <option>Absent</option>
+        </select><br><br>
+
+        <button onclick="saveAttendance()">Save Attendance</button>
+
+    </div>
+
+    <br><br>
+
+    <h2 align="center">Attendance Records</h2>
+
+    <table id="attendanceTable" border="1" width="100%">
+        <tr>
+            <th>Student Name</th>
+            <th>Roll Number</th>
+            <th>Course</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+            </table>
+
+    <br><br>
+
+    <h2 align="center">Attendance Calendar</h2>
+
+    <div id="calendar"></div>
+
+    <br><br>
+
+    <hr>
+
+    <footer class="footer">
+        <p>© 2026 Attendance Management System</p>
+        <p><strong>Designed and Developed by Uday &amp; Poornima</strong></p>
+        <p>BCA 1st Semester</p>
+    </footer>
+
+    <script src="script.js"></script>
+    </body>
+</html>
